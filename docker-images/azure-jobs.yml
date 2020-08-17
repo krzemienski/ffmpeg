@@ -20,6 +20,14 @@ jobs:
         LONG_VERSION: snapshot
         VARIANT:  ubuntu1804
         PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_snapshot:
+        VERSION:  snapshot
+        LONG_VERSION: snapshot
+        VARIANT:  ubuntu2004
+        PARENT: ubuntu
         ISPARENT:  True
 
 
@@ -83,6 +91,14 @@ jobs:
         VERSION:  4.3
         LONG_VERSION: 4.3.1
         VARIANT:  ubuntu1804
+        PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_4.3.1:
+        VERSION:  4.3
+        LONG_VERSION: 4.3.1
+        VARIANT:  ubuntu2004
         PARENT: ubuntu
         ISPARENT:  True
 
@@ -180,6 +196,14 @@ jobs:
         LONG_VERSION: 4.2.4
         VARIANT:  ubuntu1804
         PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_4.2.4:
+        VERSION:  4.2
+        LONG_VERSION: 4.2.4
+        VARIANT:  ubuntu2004
+        PARENT: ubuntu
         ISPARENT:  True
 
 
@@ -243,6 +267,14 @@ jobs:
         VERSION:  4.1
         LONG_VERSION: 4.1.6
         VARIANT:  ubuntu1804
+        PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_4.1.6:
+        VERSION:  4.1
+        LONG_VERSION: 4.1.6
+        VARIANT:  ubuntu2004
         PARENT: ubuntu
         ISPARENT:  True
 
@@ -308,6 +340,14 @@ jobs:
         LONG_VERSION: 4.0.6
         VARIANT:  ubuntu1804
         PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_4.0.6:
+        VERSION:  4.0
+        LONG_VERSION: 4.0.6
+        VARIANT:  ubuntu2004
+        PARENT: ubuntu
         ISPARENT:  True
 
 
@@ -371,6 +411,14 @@ jobs:
         VERSION:  3.4
         LONG_VERSION: 3.4.8
         VARIANT:  ubuntu1804
+        PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_3.4.8:
+        VERSION:  3.4
+        LONG_VERSION: 3.4.8
+        VARIANT:  ubuntu2004
         PARENT: ubuntu
         ISPARENT:  True
 
@@ -436,6 +484,14 @@ jobs:
         LONG_VERSION: 3.3.9
         VARIANT:  ubuntu1804
         PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_3.3.9:
+        VERSION:  3.3
+        LONG_VERSION: 3.3.9
+        VARIANT:  ubuntu2004
+        PARENT: ubuntu
         ISPARENT:  True
 
 
@@ -491,6 +547,14 @@ jobs:
         VERSION:  3.2
         LONG_VERSION: 3.2.15
         VARIANT:  ubuntu1604
+        PARENT: ubuntu
+        ISPARENT:  False
+
+
+      ubuntu2004_3.2.15:
+        VERSION:  3.2
+        LONG_VERSION: 3.2.15
+        VARIANT:  ubuntu2004
         PARENT: ubuntu
         ISPARENT:  True
 

@@ -21,6 +21,7 @@ SKIP_VERSIONS = "3.1.11 3.0.12"
 VARIANTS = [
     {"name": "ubuntu1604", "parent": "ubuntu"},
     {"name": "ubuntu1804", "parent": "ubuntu"},
+    {"name": "ubuntu2004", "parent": "ubuntu"},
     {"name": "alpine311", "parent": "alpine"},
     {"name": "alpine38", "parent": "alpine"},
     {"name": "centos7", "parent": "centos"},
@@ -200,6 +201,10 @@ for version in keep_version:
             "parent"
         ] == "vaapi":
             FFMPEG_CONFIG_FLAGS.append("--enable-vaapi")
+
+        # Libvmaf not sure the exact support for release v1.3.5 trying >= 4 then will work down as I compile/build locally for testing
+        if (version == "snapshot" or int(version[0]) >= 4):
+            FFMPEG_CONFIG_FLAGS.append("--enable-libvmaf")
 
         if variant["parent"] == "nvidia":
             CFLAGS.append("-I${PREFIX}/include/ffnvcodec")
